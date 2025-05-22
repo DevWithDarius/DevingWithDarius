@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Secure AWS Web App Deployment</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+        background-color: #f4f7fa;
+        margin: 0;
+        padding: 0;
+      }
+      header {
+        background-color: #0073e6;
+        color: white;
+        padding: 10px 0;
+      }
+      h1 {
+        font-size: 3em;
+      }
+      p {
+        font-size: 1.2em;
+      }
+      .content {
+        margin: 50px auto;
+        width: 80%;
+        max-width: 800px;
+        background-color: white;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+      .diagram-wrapper {
+        max-width: 720px;
+        margin: 0 auto;
+      }
+      footer {
+        margin-top: 50px;
+        background-color: #333;
+        color: white;
+        padding: 10px 0;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Welcome to the Secure AWS Web App</h1>
+    </header>
+
+    <div class="content">
+      <h2>Project Overview</h2>
+      <p>
+        This web application is deployed on Amazon Web Services (AWS) using a
+        combination of EC2, an Application Load Balancer (ALB), VPC, and IAM
+        policies to ensure a secure and scalable infrastructure.
+      </p>
+
+      <h3>Key Features</h3>
+      <ul>
+        <li>EC2 Instance with secure HTTPS configuration</li>
+        <li>SSL/TLS Encryption via AWS ACM (Certificate Manager)</li>
+        <li>CloudWatch Monitoring for Logs and Alerts</li>
+        <li>
+          Web Application Firewall (WAF) for Input Validation and Security
+        </li>
+        <li>
+          Custom Domain:
+          <a href="https://devwithdarius.us" target="_blank"
+            >devwithdarius.us</a
+          >
+        </li>
+      </ul>
+
+      <h3>AWS Architecture</h3>
+      <p>
+        This diagram shows how the web app is structured using AWS services:
+      </p>
+
+      <div class="diagram-wrapper">
+        <img
+          src="images/SecureAWSWebAppDia.png"
+          alt="AWS Architecture Diagram"
+          style="
+            width: 100%;
+            height: auto;
+            margin-top: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+          "
+        />
+      </div>
+
+      <p>
+        This project follows AWS best practices for deploying secure web
+        applications, and ensures proper security configurations, such as:
+      </p>
+      <ul>
+        <li>IAM Least Privilege Access</li>
+        <li>Secure VPC Setup with Public and Private Subnets</li>
+        <li>Automatic Load Balancing with ALB</li>
+      </ul>
+
+      <h3>Learn More About the Project</h3>
+      <p>
+        For more details, check out the source code and deployment steps on my
+        <a
+          href="https://github.com/DevWithDarius/DevingWithDarius"
+          target="_blank"
+          >GitHub Repository</a
+        >.
+      </p>
+    </div>
+
+    <footer>
+      <p>&copy; 2025 DevWithDarius | All Rights Reserved</p>
+    </footer>
+  </body>
+</html>
